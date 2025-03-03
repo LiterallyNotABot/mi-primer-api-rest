@@ -1,0 +1,35 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bienvenido a FashionStore, la mejor tienda de moda en línea">
+    <title>FashionStore - Inicio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body { background-color: #f8f9fa; }
+        .navbar { background-color: black; }
+        .navbar-brand, .nav-link { color: white !important; }
+        .hero { height: 80vh; display: flex; align-items: center; justify-content: center; text-align: center; }
+        .hero-content { background: rgba(0, 0, 0, 0.7); color: white; padding: 30px; border-radius: 10px; }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="#">FashionStore</a>
+        <div>
+            <a class="btn btn-outline-light" href="/login">Iniciar Sesión</a>
+        </div>
+    </div>
+</nav>
+<div class="hero">
+    <div class="hero-content">
+        <h1>Bienvenido a FashionStore</h1>
+        <p>Descubre las últimas tendencias en moda y llena tu carrito con estilo.</p>
+        <a href="/productos" class="btn btn-light">Explorar Productos</a>
+    </div>
+</div>
+</body>
+</html>
