@@ -7,15 +7,16 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-public class ProductoController {
+public class ProductoApiController {
 
     private final ProductoDao productoDao;
 
-    public ProductoController(ProductoDao productoDao) {
+    public ProductoApiController(ProductoDao productoDao) {
         this.productoDao = productoDao;
     }
 
-    @GetMapping("/productos")
+    // Este método maneja la solicitud GET a /api/productos y devuelve los productos como JSON
+    @GetMapping("/api/productos")
     public List<Producto> obtenerProductos() {
         return productoDao.findAll();
     }

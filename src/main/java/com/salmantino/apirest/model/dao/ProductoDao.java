@@ -6,5 +6,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ProductoDao extends JpaRepository<Producto, Integer> {
+
     boolean existsByNombre(String nombre);
 }
